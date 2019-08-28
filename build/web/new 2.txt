@@ -1,0 +1,59 @@
+	
+		<script>
+	            var tm=3;  
+                var i=0;
+                var item=new Array();
+  
+                item[0]="<img src='akm1.jpg' height='258px' width='400px'>"; 
+				item[1]="<img src='akm2.jpg' height='258px' width='400px'>";
+				item[2]="<img src='akm3.jpg' height='258px' width='400px'>";
+				item[3]="<img src='akm4.jpg' height='258px' width='400px'>";
+				item[4]="<img src='akm5.jpg' height='258px' width='400px'>";
+				item[5]="<img src='akm6.jpg' height='258px' width='400px'>";
+
+				var caption=new Array();
+
+caption[0]="<h2>UK Hospital's Accident, Emergency Wing Closed Over Two Suspected MERS Cases</h2>";
+
+caption[1]="hello2";
+caption[2]="hello3";
+caption[3]="hello4";
+caption[4]="hello5";
+caption[5]="hell06";
+
+	function img_slider()
+	
+{
+	document.getElementById('slid_img').innerHTML=item[i];
+	
+	document.getElementById('slid_desc_img').innerHTML=caption[i];
+	i++;
+	if(i==6)
+		i=0;
+   setTimeout("img_slider()",tm*1000);
+ }
+
+
+
+
+
+css
+
+
+
+#slid_img
+	{
+		height:258px;
+		width:400px;
+		border:1px solid silver;
+		background:white;
+		float:left;
+	}
+	#slid_desc_img
+	{
+		height:258px;
+		width:620px;
+		border:1px solid silver;
+		background:white;
+		float:left;
+	}
